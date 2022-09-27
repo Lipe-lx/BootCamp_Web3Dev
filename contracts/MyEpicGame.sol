@@ -91,7 +91,7 @@ contract MyEpicGame is ERC721 {
     console.log("Boss inicializado com sucesso %s com HP %s, img %s", bigBoss.name, bigBoss.hp, bigBoss.imageURI);
     
     //Criacao de um loop para alocar os atributos caracteristicos de cada NFT
-    //Se o tamanho do nome for < 0 quer dizer que nao existe NFT para este id
+    //Se o tamanho do nome for < 0 quer dizer que nao existe NFT para este id entao soma +1 no indice
     for(uint i = 0; i < characterNames.length; i += 1) {
       defaultCharacters.push(CharacterAttributes({
         characterIndex: i, //index dos atributos espessificos de cada NFT
